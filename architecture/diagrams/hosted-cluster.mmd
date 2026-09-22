@@ -1,0 +1,11 @@
+flowchart TB
+    HUB["Management / hosting cluster"]
+    MCE["Multicluster Engine"]
+    HCP["Hosted Control Plane"]
+    NP["NodePool"]
+    HC["Hosted OpenShift cluster"]
+    HUB --> MCE
+    MCE --> HCP
+    MCE --> NP
+    HCP --> HC
+    NP --> HC

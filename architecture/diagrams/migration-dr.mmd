@@ -1,0 +1,6 @@
+flowchart LR
+    S["Source cluster"] --> P["Migration planning"]
+    P --> T["Target cluster"]
+    T --> C["Cutover"]
+    C --> V["Application validation"]
+    V --> R["Rollback plan if required"]

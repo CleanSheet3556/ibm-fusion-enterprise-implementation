@@ -1,0 +1,6 @@
+flowchart LR
+    VM["VM"] --> SRC["Source host"]
+    SRC --> PLAN["Migration preconditions"]
+    PLAN --> DST["Destination host"]
+    DST --> VM2["Running migrated VM"]
+    VM2 --> V["Guest/application validation"]

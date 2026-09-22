@@ -1,0 +1,5 @@
+flowchart LR
+    A["Region A<br/>Primary OpenShift + FDF"] -->|Asynchronous replication| B["Region B<br/>Recovery OpenShift + FDF"]
+    A --> APPA["Protected application"]
+    B --> APPB["Failed-over application"]
+    APPB --> V["Validation"]

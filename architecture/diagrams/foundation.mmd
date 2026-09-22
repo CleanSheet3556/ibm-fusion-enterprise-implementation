@@ -1,0 +1,14 @@
+flowchart TB
+    OCP["OpenShift Container Platform"]
+    F["IBM Fusion base/operator"]
+    FDF["Fusion Data Foundation"]
+    GDP["Global Data Platform / Storage Scale integration"]
+    SC["StorageClass / CSI"]
+    APP["Enterprise workloads"]
+    SCALE["Remote IBM Storage Scale"]
+    OCP --> F
+    F --> FDF
+    FDF --> SC
+    SC --> APP
+    F --> GDP
+    GDP --> SCALE

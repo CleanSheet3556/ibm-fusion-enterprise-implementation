@@ -1,0 +1,6 @@
+flowchart LR
+    APP["Application namespace"] --> B["Fusion Backup & Restore"]
+    B --> R["Protected repository"]
+    R --> B2["Restore workflow"]
+    B2 --> TARGET["Same or alternate cluster"]
+    TARGET --> V["Application/data validation"]
